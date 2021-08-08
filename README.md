@@ -1,2 +1,27 @@
-# visual-basic-6-cheatsheet
+# Visual Basic 6 Cheatsheet
 A quick guide to visual basic 6 commands .
+
+## TIPOS DE DADOS
+
+## DECLARANDO VARIÁVEIS
+
+## OPERADORES ARITMÉTICOS
+
+## OPERADORES RELACIONAIS
+
+## OPERADORES LÓGICOS
+ 
+## ESTRUTURAS CONDICIONAIS
+
+## ESTRUTURAS DE REPETIÇÕES
+
+## FUNCÕES
+
+## SUB-ROTINAS
+
+## CLASSES
+
+## ATRIBUTO DE CLASSES
+
+## METODOS DE CLASSES
+
