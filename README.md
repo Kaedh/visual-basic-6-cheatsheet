@@ -13,7 +13,8 @@
  Dim name As String          ' String
  Dim birthDay As Date        ' Data (01/01/0100 up to 12/31/9999)
  Dim isRaining As Boolean    ' Bool
- Dim whataver As Variant     ' Guarda qualquer tipo de dado, é o tipo padrão de dado NÃO É RECOMENDADO USA-LA
+ Dim whataver As Variant     ' Guarda qualquer tipo de dado, é o tipo padrão de dado 
+                             ' NÃO É RECOMENDADO USA-LA
  
 ```
 
@@ -194,8 +195,8 @@ __________________________________________
      Private cAge As Integer
 
  Public Sub Class_Initialize()
-     cName = ""                                               ' Função que é executada quando o objeto é montado
-     cAge = 0 
+     cName = ""                                               ' Função que é executada quando o 
+     cAge = 0                                                 ' objeto é montado
  End Sub
 
  Public Property Get name()
@@ -215,7 +216,8 @@ __________________________________________
  End Property
 
  Public Sub Apresentação()
-     MsgBox "Nome : " & cName & " Idade: " & cAge             ' Método que faz o uso dos atributos  interno da classe
- End Sub
+     MsgBox "Nome : " & cName & " Idade: " & cAge             ' Método que faz o uso dos 
+ End Sub                                                      ' atributos  interno da classe
+ 
 ```
 
