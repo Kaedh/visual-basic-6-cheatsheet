@@ -22,6 +22,7 @@
 ```vb
  Dim name As String     ' A keyword Dim declara uma varíavel 
  Const COLOR As String  ' A keyword Const declara uma constante 
+ Dim names(5) As String ' Cria um array de 5 elementos todos do tipo String
  
 ```
 
