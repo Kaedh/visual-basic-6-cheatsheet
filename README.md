@@ -90,7 +90,8 @@
  Else
   result = "greater"
  End If
- 
+__________________________________________
+
  Select Case Num1
   Case 1
    result = "Num1 == 1"
@@ -105,14 +106,116 @@
 ```
 
 ## ESTRUTURAS DE REPETIÇÕES
+```vb
+ Dim number As Integer
+ number = 1 
+
+ Do While number <= 100 
+  number = number + 1 
+ Loop
+ 
+ __________________________________________
+
+ number = 1
+
+ While number <=100
+  number = number + 1 
+ Wend
+ 
+ __________________________________________
+ 
+ Dim number As Long
+ number = 0
+ 
+ Do  
+  number = number + 1 
+ Loop While number < 201
+ 
+ __________________________________________
+ 
+ Dim number As Long
+ number = 0
+ 
+ Do Until number > 1000 
+  number = number + 1 
+  Print number 
+ Loop
+ 
+ __________________________________________
+ 
+ Dim x As Integer
+ 
+ For x = 1 To 50 
+  Print x 
+ Next 
+ 
+```
 
 ## FUNCÕES
+```vb
+ Funções em visual basic SEMPRE RETORNAM ALGUM VALOR para o controle
+
+ Public Function soma(a As Integer, b As Integer) As Integer
+ 
+  soma = a + b             ' chamando o nome da funcão e atribuindo  
+                           ' um valor, é a forma de fazer retorno da funcão
+                   
+ End Function
+ 
+ Private Sub Command1_Click()
+ 
+ Debug.Print (soma(5, 9))  ' Para invocar uma função basta escrever o nome
+                           ' o nome da função seguida de ( ) dentro será
+                           ' passado os argumentos caso tenha
+
+ End Sub
+ 
+```
+
 
 ## SUB-ROTINAS
+```vb
+ Sub-rotinas em Visual Basic funcionam parecido com funções,
+ Mas elas não precisam retornar nenhum valor para o controle.
+
+ Private Sub HelloWorld()
+     Debug.Print "Hello World"
+ End Sub
+ 
+ Private Sub Command1_Click()
+    HelloWorld       ' Escreve "Hello World" no console
+ End Sub
+```
 
 ## CLASSES
+```vb
+ Option Explicit
+     Private cName As String                                  ' Declarando os atributos da classe
+     Private cAge As Integer
 
-## ATRIBUTO DE CLASSES
+ Public Sub Class_Initialize()
+     cName = ""                                               ' Função que é executada quando o objeto é montado
+     cAge = 0 
+ End Sub
 
-## METODOS DE CLASSES
+ Public Property Get name()
+     name = cName                                             ' Método get do atributo cName
+ End Property
+
+ Public Property Let setNewName(newName As String)
+  cName = newName                                             ' Método set do atributo CName
+ End Property
+
+ Public Property Get age()
+     age = cAge                                               ' Método get do atributo cAge
+ End Property
+
+ Public Property Let setNewAge(newAge As Integer)
+  cAge = newAge                                               ' Método set do atributo cAge
+ End Property
+
+ Public Sub Apresentação()
+     MsgBox "Nome : " & cName & " Idade: " & cAge             ' Método que faz o uso dos atributos  interno da classe
+ End Sub
+```
 
